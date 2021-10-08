@@ -1,0 +1,59 @@
+$mainColor: #546e7a;
+$secondColor: #6d4c41;
+$thirdColor: #5e4238;
+
+$baColor1: #65661880;
+$baColor2: #4a4b1280;
+$baColor3: #34350e80;
+$baColor4: #65661850;
+$baColor5: #4a4b1220;
+$baColor6: #34350e50;
+
+.logo_h {
+  height: 80px;
+  margin-left: 20px;
+  padding: 3px;
+}
+.gradient-custom {
+  background: -moz-linear-gradient(
+    top,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+}
+.background_section {
+  background: linear-gradient(
+    150deg,
+    $baColor4 10%,
+     $baColor5 60%,
+    $baColor6 100%
+  );
+
+
+}
+.carousel_custom {
+  width: 300px;
+}
+
+.team_custom{
+  border-bottom: 3px solid grey;
+}
