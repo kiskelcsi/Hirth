@@ -26053,10 +26053,17 @@ header a.model-link span {
       background-attachment: fixed; } }
 
 .header {
-  position: sticky !important; }
-
-.header {
-  position: relative !important; }
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5); }
+  @media all and (min-width: 900px) {
+    .header {
+      position: relative !important; } }
 
 .stickynav .header {
   position: fixed !important;
@@ -26070,6 +26077,12 @@ header a.model-link span {
 
 .stickynav .margin_slide {
   margin-top: 80px; }
+
+.margin_slide {
+  margin-top: 80px; }
+  @media all and (min-width: 900px) {
+    .margin_slide {
+      margin-top: 0; } }
 
 .slider_button {
   z-index: 8 !important;
