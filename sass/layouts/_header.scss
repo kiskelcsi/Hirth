@@ -57,3 +57,28 @@ $baColor6: #34350e50;
 .team_custom{
   border-bottom: 3px solid grey;
 }
+
+.introbox_size {
+ min-height: 125px !important;
+ font-size: 15px !important;
+}
+.introbox_size2 {
+ height: 125px !important;
+ font-size: 15px !important;
+ overflow: hidden;
+
+ img {position: relative;
+   height: 130px;
+ }
+}
+
+.back_image-style {
+  
+  position:relative !important;
+  @include smallscreen_screen {
+    background-attachment: fixed;
+
+
+  }
+
+}

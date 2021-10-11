@@ -15,12 +15,16 @@ box-sizing: border-box !important;
 -moz-box-sizing: border-box !important;
 -webkit-box-sizing: border-box !important;
 cursor: pointer !important;
+&:hover {
+  background-color: rgb(82, 82, 82) !important;
+
+}
 }
 
 .slider_title{
 z-index: 6 !important;
-min-width: 456px !important;
-max-width: 456px;
+min-width: 356px !important;
+max-width: 356px;
 white-space: normal !important;
 font-size: 40px !important;
 line-height: 40px !important;
@@ -78,6 +82,12 @@ p {
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
     position: absolute;
+    display: none;
+    @include smallscreen_screen {
+    display: flex;
+  
+    }
+  
   }
 
   .hermes .tp-bullet:hover {

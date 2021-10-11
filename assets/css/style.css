@@ -25927,6 +25927,24 @@ ul.portfolio-filter li {
 .team_custom {
   border-bottom: 3px solid grey; }
 
+.introbox_size {
+  min-height: 125px !important;
+  font-size: 15px !important; }
+
+.introbox_size2 {
+  height: 125px !important;
+  font-size: 15px !important;
+  overflow: hidden; }
+  .introbox_size2 img {
+    position: relative;
+    height: 130px; }
+
+.back_image-style {
+  position: relative !important; }
+  @media all and (min-width: 900px) {
+    .back_image-style {
+      background-attachment: fixed; } }
+
 .slider_button {
   z-index: 8 !important;
   white-space: nowrap !important;
@@ -25944,11 +25962,13 @@ ul.portfolio-filter li {
   -moz-box-sizing: border-box !important;
   -webkit-box-sizing: border-box !important;
   cursor: pointer !important; }
+  .slider_button:hover {
+    background-color: #525252 !important; }
 
 .slider_title {
   z-index: 6 !important;
-  min-width: 456px !important;
-  max-width: 456px;
+  min-width: 356px !important;
+  max-width: 356px;
   white-space: normal !important;
   font-size: 40px !important;
   line-height: 40px !important;
@@ -25997,7 +26017,11 @@ ul.portfolio-filter li {
   box-shadow: inset 0 0 0 2px white;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
-  position: absolute; }
+  position: absolute;
+  display: none; }
+  @media all and (min-width: 900px) {
+    .hermes .tp-bullet {
+      display: flex; } }
 
 .hermes .tp-bullet:hover {
   background-color: rgba(0, 0, 0, 0.21); }
