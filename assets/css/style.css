@@ -26055,6 +26055,9 @@ header a.model-link span {
 .header {
   position: sticky !important; }
 
+.header {
+  position: relative !important; }
+
 .stickynav .header {
   position: fixed !important;
   top: 0;
