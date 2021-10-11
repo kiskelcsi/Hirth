@@ -1103,21 +1103,39 @@ a {
 }
 
 a:hover {
-  color: #f44336;
+  color: #dddddd;
   text-decoration: none;
 }
 
 a:focus {
-  color: #f44336;
+  color: #dddddd;
   outline: none;
   text-decoration: none;
 }
 
 a:active {
-  color: #f44336;
+  color: #dddddd;
   outline: none;
   text-decoration: none;
 }
+
+.text_intro:hover {
+  color: #797979;
+  text-decoration: none;
+}
+
+.text_intro:focus {
+  color: #797979;
+  outline: none;
+  text-decoration: none;
+}
+
+.text_intro:active {
+  color: #797979;
+  outline: none;
+  text-decoration: none;
+}
+
 
 .btn-primary-travlez {
   background-color: #0864b2;
@@ -1127,7 +1145,7 @@ a:active {
 }
 
 .btn-primary-travlez:hover {
-  background-color: #f44336;
+  background-color: #d6d6d6;
 }
 
 input {
