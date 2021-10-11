@@ -83,3 +83,24 @@ var tpj = jQuery;
       }); /*ready*/
 
 
+      
+// Sticky nav
+
+const sectionHeroEl = document.querySelector(".section-hero")
+
+const obs = new IntersectionObserver(function(entries){
+  const ent = entries[0];
+  console.log(ent);
+  if(ent.isIntersecting === false){
+  document.body.classList.add("stickynav")
+}
+  if(ent.isIntersecting === true){
+  document.body.classList.remove("stickynav")}
+},
+ {
+  // In the viewport
+  root: null,
+  threshold: 0,
+  rootMargin: '-90px'
+})
+obs.observe(sectionHeroEl)
