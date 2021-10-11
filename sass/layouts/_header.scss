@@ -34,6 +34,27 @@ $baColor6: #34350e50;
     $baColor3 100%
   );
 }
+.gradient-custom2 {
+  padding-right: 0;
+  background: -moz-linear-gradient(
+    top,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $baColor1 25%,
+    $baColor2 50%,
+    $baColor3 100%
+  );
+}
 
 #map {
   height: 400px;
@@ -84,19 +105,29 @@ $baColor6: #34350e50;
 }
 
 // sticky nav
+.header {
+  position: sticky !important;}
+
+
 
 .stickynav .header {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 80px;
-  background-color: azure;
+  background-color: #fff;
   z-index: 9999;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+
+}
+.stickynav .margin_slide {
+  
+    margin-top: 80px ;
+
+  
+
 }
 
-.stickynav .margin_slide {
-  margin-top: 80px !important;
-}
+
 
