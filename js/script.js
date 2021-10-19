@@ -103,3 +103,5 @@ const obs = new IntersectionObserver(function(entries){
   rootMargin: '-90px'
 })
 obs.observe(sectionHeroEl)
+
+
