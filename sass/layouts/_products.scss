@@ -4,6 +4,18 @@ $baColor3: #34350e80;
 $baColor4: #65661850;
 $baColor5: #4a4b1220;
 $baColor6: #34350e50;
+.jumbotron_prod {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(fűrészeltfa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    overflow: hidden;
+    @include tablet_screen {
+        background-attachment: fixed;
+    }
+}
+
 .carousel-indicators {
     top: 105%;
 }
@@ -21,15 +33,19 @@ $baColor6: #34350e50;
 }
 
 .carousel-control-next {
-    background-color: #b2b38b;
     right: 0;
     width: 55px;
+    @include smallscreen_screen {
+        background-color: #b2b38b81;
+    }
 }
 
 .carousel-control-prev {
-    background-color: #b1b18b;
     right: 0;
     width: 55px;
+    @include smallscreen_screen {
+        background-color: #b2b38b81;
+    }
 }
 
 .mt-5,
@@ -50,13 +66,32 @@ $baColor6: #34350e50;
     background: linear-gradient( to bottom, $baColor1 25%, $baColor2 50%, $baColor3 100%);
 }
 
+.bg-prod {
+    background: linear-gradient( to bottom, rgb(205, 205, 205) 25%, rgb(221, 221, 221) 50%, rgb(139, 139, 139) 100%);
+}
+
 .space_prod {
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color: #b1b18b9f;
+    // background-color: #b1b18b9f;
     padding-bottom: 80px;
-    border: 1px solid rgba(105, 105, 105, 0.3);
-    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(105, 105, 105, 0.1);
+    box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    min-height: 400px;
+    .card-body a {
+        position: absolute;
+        bottom: 10px;
+        width: 84% !important;
+    }
+    @include medium_screen {
+        padding-bottom: 80px;
+    }
+    @include smallbigscreen_screen {
+        padding-bottom: 0;
+    }
 }
 
 
@@ -274,7 +309,7 @@ $baColor6: #34350e50;
 
 .prod_text {
     font-size: 40px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
     padding-top: 50px;
     padding-bottom: 50px;
 }

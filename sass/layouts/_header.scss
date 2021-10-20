@@ -1,112 +1,82 @@
 $mainColor: #546e7a;
 $secondColor: #6d4c41;
 $thirdColor: #5e4238;
-
 $baColor1: #65661880;
 $baColor2: #4a4b1280;
 $baColor3: #34350e80;
 $baColor4: #65661850;
 $baColor5: #4a4b1220;
 $baColor6: #34350e50;
-
 .logo_h {
-  height: 80px;
-  margin-left: 20px;
-  padding: 3px;
+    height: 80px;
+    margin-left: 20px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.szecs {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    z-index: 9000;
+}
+
 .gradient-custom {
-  background: -moz-linear-gradient(
-    top,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
+    background: -moz-linear-gradient( top, $baColor1 25%, $baColor2 50%, $baColor3 100%);
+    background: -webkit-linear-gradient( top, $baColor1 25%, $baColor2 50%, $baColor3 100%);
+    background: linear-gradient( to bottom, $baColor1 25%, $baColor2 50%, $baColor3 100%);
 }
+
 .gradient-custom2 {
-  padding-right: 0;
-  background: -moz-linear-gradient(
-    top,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    $baColor1 25%,
-    $baColor2 50%,
-    $baColor3 100%
-  );
+    padding-right: 0;
+    background: -moz-linear-gradient( top, $baColor1 25%, $baColor2 50%, $baColor3 100%);
+    background: -webkit-linear-gradient( top, $baColor1 25%, $baColor2 50%, $baColor3 100%);
+    background: linear-gradient( to bottom, $baColor1 25%, $baColor2 50%, $baColor3 100%);
 }
 
 #map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
 }
+
 .background_section {
-  background: linear-gradient(
-    150deg,
-    $baColor4 10%,
-     $baColor5 60%,
-    $baColor6 100%
-  );
-
-
+    background: linear-gradient( 150deg, $baColor4 10%, $baColor5 60%, $baColor6 100%);
 }
+
 .carousel_custom {
-  width: 300px;
-}
-
-.team_custom{
-  border-bottom: 3px solid grey;
+    width: 300px;
 }
 
 .introbox_size {
- min-height: 125px !important;
- font-size: 15px !important;
+    min-height: 125px !important;
+    font-size: 15px !important;
 }
-.introbox_size2 {
- height: 125px !important;
- font-size: 15px !important;
- overflow: hidden;
 
- img {position: relative;
-   height: 130px;
- }
+.introbox_size2 {
+    height: 125px !important;
+    font-size: 15px !important;
+    overflow: hidden;
+    img {
+        position: relative;
+        height: 130px;
+    }
 }
 
 .back_image-style {
-  
-  position:relative !important;
-  @include smallscreen_screen {
-    background-attachment: fixed;
-
-
-  }
-
+    position: relative !important;
+    @include smallscreen_screen {
+        background-attachment: fixed;
+    }
 }
 
 // sticky nav
-
-  .header {
+.header {
     position: fixed !important;
     top: 0;
     bottom: 0;
@@ -116,40 +86,41 @@ $baColor6: #34350e50;
     z-index: 9999;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
     @include smallscreen_screen {
-      position: relative !important;
-  
-  
+        position: relative !important;
     }
-  
-  }
-  
+}
+
 .stickynav .header {
-  position: fixed !important;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #fff;
-  z-index: 9999;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
+
 .stickynav .margin_slide {
-  
-    margin-top: 80px ;
-
-  
-
+    margin-top: 80px;
 }
 
+.margin_slide {
+    margin-top: 80px;
+    @include smallscreen_screen {
+        margin-top: 0;
+    }
+}
 
+.footer_logo {
+    width: 80%;
+    img {
+        filter: brightness(70%);
+    }
+}
 
-.margin_slide { 
-  margin-top: 80px ;
-  @include smallscreen_screen {
-    margin-top: 0 ;
-
-
-  }
-
+.back_contact {
+    background-position: center;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
 }

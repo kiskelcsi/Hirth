@@ -26003,8 +26003,19 @@ header a.model-link span {
 
 .logo_h {
   height: 80px;
-  margin-left: 20px;
-  padding: 3px; }
+  margin-left: 20px; }
+
+html {
+  scroll-behavior: smooth; }
+
+.szecs {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  z-index: 9000; }
 
 .gradient-custom {
   background: -moz-linear-gradient(top, #65661880 25%, #4a4b1280 50%, #34350e80 100%);
@@ -26027,9 +26038,6 @@ header a.model-link span {
 
 .carousel_custom {
   width: 300px; }
-
-.team_custom {
-  border-bottom: 3px solid grey; }
 
 .introbox_size {
   min-height: 125px !important;
@@ -26080,6 +26088,16 @@ header a.model-link span {
   @media all and (min-width: 900px) {
     .margin_slide {
       margin-top: 0; } }
+
+.footer_logo {
+  width: 80%; }
+  .footer_logo img {
+    filter: brightness(70%); }
+
+.back_contact {
+  background-position: center;
+  background-size: 70% 100%;
+  background-repeat: no-repeat; }
 
 .slider_button {
   z-index: 8 !important;
@@ -26187,6 +26205,17 @@ header a.model-link span {
 .benefit {
   background: linear-gradient(silver, #7e7e7e); }
 
+.jumbotron_prod {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(fűrészeltfa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  overflow: hidden; }
+  @media all and (min-width: 600px) {
+    .jumbotron_prod {
+      background-attachment: fixed; } }
+
 .carousel-indicators {
   top: 105%; }
 
@@ -26200,14 +26229,18 @@ header a.model-link span {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='baColor3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
 
 .carousel-control-next {
-  background-color: #b2b38b;
   right: 0;
   width: 55px; }
+  @media all and (min-width: 900px) {
+    .carousel-control-next {
+      background-color: #b2b38b81; } }
 
 .carousel-control-prev {
-  background-color: #b1b18b;
   right: 0;
   width: 55px; }
+  @media all and (min-width: 900px) {
+    .carousel-control-prev {
+      background-color: #b2b38b81; } }
 
 .mt-5,
 .my-5 {
@@ -26224,13 +26257,28 @@ header a.model-link span {
   background: -webkit-linear-gradient(top, #65661880 25%, #4a4b1280 50%, #34350e80 100%);
   background: linear-gradient(to bottom, #65661880 25%, #4a4b1280 50%, #34350e80 100%); }
 
+.bg-prod {
+  background: linear-gradient(to bottom, #cdcdcd 25%, #dddddd 50%, #8b8b8b 100%); }
+
 .space_prod {
   margin-top: 80px;
   margin-bottom: 80px;
-  background-color: #b1b18b9f;
   padding-bottom: 80px;
-  border: 1px solid rgba(105, 105, 105, 0.3);
-  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1); }
+  border: 1px solid rgba(105, 105, 105, 0.1);
+  box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.1); }
+
+.card {
+  min-height: 400px; }
+  .card .card-body a {
+    position: absolute;
+    bottom: 10px;
+    width: 84% !important; }
+  @media all and (min-width: 768px) {
+    .card {
+      padding-bottom: 80px; } }
+  @media all and (min-width: 1000px) {
+    .card {
+      padding-bottom: 0; } }
 
 /* // ------------------------ //
 // popup
@@ -26410,7 +26458,7 @@ header a.model-link span {
 
 .prod_text {
   font-size: 40px;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 10px 10px 10px black;
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -26418,10 +26466,42 @@ header a.model-link span {
   font-size: 18px; }
 
 .jumbotron_about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/fűrész.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(fűrész.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 60vh;
+  overflow: hidden; }
+  @media all and (min-width: 600px) {
+    .jumbotron_about {
+      background-attachment: fixed; } }
+
+.ab_hr {
+  background-color: white; }
+
+.team_custom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.635); }
+
+.back_contact {
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contact_title {
+  font-size: 50px;
+  margin-bottom: 20px; }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  margin-top: 50px; }
+  @media all and (min-width: 900px) {
+    .mapouter {
+      margin-top: 0; } }
+
+.gmap_canvas {
   overflow: hidden;
-  background-attachment: fixed; }
+  background: none !important;
+  height: 100%;
+  width: 100%; }

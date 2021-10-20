@@ -3,11 +3,21 @@
     }
     
     .jumbotron_about {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/fűrész.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(fűrész.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 60vh;
         overflow: hidden;
-        background-attachment: fixed;
+        @include tablet_screen {
+            background-attachment: fixed;
+        }
+    }
+    
+    .ab_hr {
+        background-color: white;
+    }
+    
+    .team_custom {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.635);
     }

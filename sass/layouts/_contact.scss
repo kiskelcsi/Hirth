@@ -1,0 +1,32 @@
+    .back_contact {
+        background-position: center;
+        // background-size: 60% 110%;
+        background-repeat: no-repeat;
+    }
+    
+    .contact_title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        @include smallscreen_screen {
+            margin-top: 0;
+        }
+    }
+    
+    .gmap_canvas {
+        overflow: hidden;
+        background: none!important;
+        height: 100%;
+        width: 100%;
+        // @include smallscreen_screen {
+        //     height: 500px;
+        //     width: 600px;
+        // }
+    }
