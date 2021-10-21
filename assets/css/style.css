@@ -26014,8 +26014,11 @@ html {
   bottom: 0;
   margin: 0;
   padding: 0;
-  width: 250px;
+  width: 150px;
   z-index: 9000; }
+  @media all and (min-width: 600px) {
+    .szecs {
+      width: 250px; } }
 
 .gradient-custom {
   background: -moz-linear-gradient(top, #65661880 25%, #4a4b1280 50%, #34350e80 100%);

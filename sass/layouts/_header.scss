@@ -22,8 +22,11 @@ html {
     bottom: 0;
     margin: 0;
     padding: 0;
-    width: 250px;
+    width: 150px;
     z-index: 9000;
+    @include tablet_screen {
+        width: 250px;
+    }
 }
 
 .gradient-custom {
