@@ -1,0 +1,11 @@
+.jumbotron_fejlesztes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(/assets/img/49883.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 60vh;
+    overflow: hidden;
+    @include desktop_screen {
+        background-size: 60%;
+    }
+}
